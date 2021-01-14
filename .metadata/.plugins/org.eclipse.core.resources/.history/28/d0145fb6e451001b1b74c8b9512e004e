@@ -1,0 +1,89 @@
+
+public class Bomba {
+	private int codigo;
+	private String combustivel;
+	private double valorLitro;
+	private double qtdLitroBomba;
+	private double qtdLitros;
+	private double valorTotal;
+	
+	public Bomba (int codigo, String combustivel, double valorLitro, double qtdLitroBomba) {
+		this.setCodigo(codigo);
+		this.setCombustivel(combustivel);
+		this.setValorLitro(valorLitro);
+		this.setQtdLitroBomba(qtdLitroBomba);
+		
+	}
+	
+		public double abastecerLitros(double qtdLitros) {
+		this.setQtdLitros(qtdLitros);
+		this.setValorTotal(this.getQtdLitros()/this.getValorLitro());
+		return this.getQtdLitros();
+	}
+	
+	
+	
+	public double abastecerValor(double valorTotal) {
+		this.setValorTotal(valorTotal);
+		this.setQtdLitros(this.getValorTotal()/this.getValorLitro());
+		return this.getQtdLitros();
+	}
+	
+	public double getQtdLitros() {
+		return qtdLitros;
+	}
+
+	public void setQtdLitros(double qtdLitros) {
+		this.qtdLitros = qtdLitros;
+	}
+
+	public double getValorTotal() {
+		return valorTotal;
+	}
+
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+
+	public String exibirBomba() {
+		return (this.getCodigo() + " - " + this.getCombustivel() + " - R$ " + this.getValorLitro() + " x " + this.getQtdLitros() + " - Valor Total: R$ " + this.getValorTotal());
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getCombustivel() {
+		return combustivel;
+	}
+
+	public void setCombustivel(String combustivel) {
+		this.combustivel = combustivel;
+	}
+
+	public double getValorLitro() {
+		return valorLitro;
+	}
+
+	public void setValorLitro(double valorLitro) {
+		this.valorLitro = valorLitro;
+	}
+
+	public double getQtdLitroBomba() {
+		return qtdLitroBomba;
+	}
+
+	public void setQtdLitroBomba(double qtdLitroBomba) {
+		this.qtdLitroBomba = qtdLitroBomba;
+	}
+		
+	
+	
+	
+	
+	
+}

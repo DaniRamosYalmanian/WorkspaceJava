@@ -1,0 +1,26 @@
+
+public class empregadoTeste {
+
+	public static void main(String[] args) {
+		
+		Empregado emp1, emp2;
+		emp1 = new Empregado();
+		emp2 = new Empregado();
+
+		emp1.nome = "Mariazinha da Silva";
+		emp1.cargo = "Analista de Engenharia de TI";
+		emp1.salario = 5000.00;
+		
+		emp2.nome = "Joazinho da Silva";
+		emp2.cargo = "Analista de Engenharia de TI";
+		emp2.salario = 5500.00;
+		
+		emp1.imprimir();
+		emp2.imprimir();
+		
+		System.out.println("Aumento de salario");
+		System.out.println("Salario atual: " + emp1.salario);
+		emp1.aumentarSalario(15);
+		System.out.println("Salario reajustado: " + emp1.salario);
+	}
+}

@@ -1,0 +1,62 @@
+
+public class Time {
+	private int hora;
+	private int minuto;
+	private int segundo;
+	
+	public int getHora() {
+		return hora;
+	}
+	public void setHora(int hora) {
+		this.hora = hora;
+	}
+	public int getMinuto() {
+		return minuto;
+	}
+	public void setMinuto(int minuto) {
+		this.minuto = minuto;
+	}
+	public int getSegundo() {
+		return segundo;
+	}
+	public void setSegundo(int segundo) {
+		this.segundo = segundo;
+	}
+	
+	public void setTime(int h, int m, int s) {
+		
+		if (h <= 24) {
+			this.hora = h;
+		} else {
+			System.out.println("Hora inválida!!!");
+			return;
+		}
+		
+		if (m <= 60) {
+			this.minuto = m;
+		} else {
+			System.out.println("Minuto inválido!!!");
+			return;
+		}
+		
+		if (s <= 60) {
+			this.segundo = s;
+		} else {
+			System.out.println("Segundo inválido!!!");
+			return;
+		}
+	}
+	
+	public String exibirHoraUniversal () {
+		return (hora + ":" + minuto + ":" + segundo);
+	}
+	
+	public String exibirHoraPadrao () {
+		if (hora < 12) {
+			return (hora + ":" + minuto + ":" + segundo + " AM");
+		} else {
+			return ((hora - 12 )+ ":" + minuto + ":" + segundo + " PM");
+		}
+	}
+
+}

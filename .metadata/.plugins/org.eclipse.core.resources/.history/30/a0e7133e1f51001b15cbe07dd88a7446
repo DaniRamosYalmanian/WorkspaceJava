@@ -1,0 +1,44 @@
+
+public class Empregado {
+	private String nome;
+	private String cargo;
+	private Double salario;
+	
+	void imprimir () {
+		
+		System.out.println("Nome   : " + nome + " ( " + cargo + " ) - R$: " + salario);
+		
+	}
+	
+	void aumentarSalario (double percentual) {
+		salario= salario + salario * (percentual/100);
+	}
+	
+	public void setNome(String novonome) {
+		nome = novonome;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public String getCargo() {
+		return cargo;
+	}
+	
+	public void setCargo(String novocargo) {
+		nome = novocargo;
+	}
+	
+	public String getCSalario() {
+		return salario;
+	}
+	
+	public void setSalario(String novosalario) {
+		nome = novosalario;
+	}
+	
+
+	
+}
+

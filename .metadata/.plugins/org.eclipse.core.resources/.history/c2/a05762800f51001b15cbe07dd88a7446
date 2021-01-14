@@ -1,0 +1,45 @@
+
+public class LojaDeCarro {
+	public static void main(String[] args) {
+		Carro c1, c2	;
+		
+		c1 = new Carro();
+		c2 = new Carro();
+				
+		c1.marcaModelo = "Porxe Xayeny";
+		c1.ano 		= 2020;
+		c1.cor 		= "Chumbo imperial";
+		c1.km		= 0;
+		c1.finalPlaca = 3;
+		c1.preco 	= 1500000.00;
+		
+		c2.marcaModelo = "Sandero";
+		c2.ano 		= 2020;
+		c2.cor 		= "Preto";
+		c2.km		= 1000;
+		c2.finalPlaca = 5;
+		c2.preco 	= 40000.00;
+		
+		/*System.out.println("Automóvel 1");
+		System.out.println("Marca/Modelo:" + c1.marcaModelo);
+		System.out.println("Ano:" + c1.ano);
+		System.out.println("Cor" + c1.cor);
+		System.out.println("Km:" + c1.km);
+		System.out.println("Final Placa:" + c1.finalPlaca);
+		System.out.println("Preco: " + c1.preco);
+		
+		System.out.println("/nAutomóvel 2");
+		System.out.println("Marca/Modelo:" + c2.marcaModelo);
+		System.out.println("Ano:" + c2.ano);
+		System.out.println("Cor" + c2.cor);
+		System.out.println("Km:" + c2.km);
+		System.out.println("Final Placa:" + c2.finalPlaca);
+		System.out.println("Preco: " + c2.preco);
+		*/
+		
+		c1.exibirAnuncio();
+		c2.exibirAnuncio();
+		
+		
+	}
+}

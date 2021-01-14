@@ -1,0 +1,46 @@
+
+public class ContaTeste {
+	static ContaBancaria conta1, conta2,conta3;
+
+	public static void main(String[] args) {
+		
+		conta1 = new ContaBancaria("123.456.789-99", 12345, 6, 0.00);
+		conta2 = new ContaBancaria("222.222.222-99", 22222, 2, 0.00);
+		conta3 = new ContaBancaria("333.333.333-99", 33333, 3, 0.00);
+		
+		imprimir();
+		
+		conta1.creditar(100.00);
+		conta2.creditar(200.00);
+		conta3.creditar(300.00);
+		
+		imprimir();
+		
+		verificadebito(conta1, 10.00);
+		boolean controle = conta1.debitar(10.00);
+		if (controle == true) {
+			System.out.println("Débito realizado");
+		} else {
+			System.out.println("Débito não realizado. Saldo insuficiente");
+		}
+		controle = conta2.debitar(10.00);
+		controle  = conta3.debitar(1000.00);
+		
+		imprimir();
+		
+	}
+	private static void imprimir() {
+		System.out.println(conta1.obterInfo());
+		System.out.println(conta2.obterInfo());
+		System.out.println(conta3.obterInfo());
+		
+	}
+	private static void verificaDebito(ContaBancaria conta,double valor ) {
+		boolean controle = conta.debitar()
+		if (controle == true) {
+			System.out.println("Débito realizado");
+		} else {
+			System.out.println("Débito não realizado. Saldo insuficiente");
+		}
+	}
+}

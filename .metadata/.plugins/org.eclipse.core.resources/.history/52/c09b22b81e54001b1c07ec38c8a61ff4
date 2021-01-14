@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class ContaTeste {
+	 static Conta conta1;
+	 
+	 public static void main(String[] args) {
+
+	 Scanner teclado = new Scanner (System.in);
+		
+	int opcao;
+	float valor;
+	boolean res;
+		
+	conta1 = new Conta("Mariazinha da Silva","123.456.789-99",12345,0);
+		
+		do {
+			
+			System.out.println("Bem vindos!!!!");
+			System.out.println("---------------");
+			System.out.println(conta1.exibirInfo());
+			System.out.println("---------------");
+			
+			System.out.println("1 - Depósito");
+			System.out.println("2 - Crédito");
+			System.out.println("3 - Saldo");
+			opcao = teclado.nextInt();
+			
+			switch(opcao) {
+			case 1:
+				System.out.println("DEPÓSITO: ");
+				System.out.println("Entre com o valor: ");
+				valor = teclado.nextFloat();
+				conta1.creditar(valor);
+				break;
+			case 2: 
+				System.out.println("SAQUE: ");
+				System.out.println("Entre com o valor: ");
+				valor = teclado.nextFloat();
+				if (conta1.debitar(valor)) {
+					System.out.println("Saque realizado");
+				} else {
+					System.out.println("Saque não realizado. Saldo insuficiente");
+				}
+				break;
+			case 3:
+				System.out.println(conta1.exibirInfo());
+				
+			
+				 break;
+			}
+		} while (opcao <=3);
+		
+}
+}

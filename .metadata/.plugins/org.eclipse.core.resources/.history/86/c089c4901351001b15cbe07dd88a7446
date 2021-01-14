@@ -1,0 +1,12 @@
+
+public class folha {
+	Empregado emp1, emp2;
+
+	public static void main(String[] args) {
+		c1 = new Empregado();
+	}
+	
+	emp1 = new Empregado();
+	emp1 = new Empregado();
+
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="ContaBancaria"/>
+<fullyQualifiedTypeName name="produto"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="model.Veiculo"/>
+<fullyQualifiedTypeName name="model.Carro"/>
+<fullyQualifiedTypeName name="model.Moto"/>
+<fullyQualifiedTypeName name="func.Funcionario"/>
+<fullyQualifiedTypeName name="func.Chefe"/>
+<fullyQualifiedTypeName name="func.Comissionado"/>
+<fullyQualifiedTypeName name="func.Horista"/>
+<fullyQualifiedTypeName name="func.Empreteiro"/>
+<fullyQualifiedTypeName name="core.interfaceBD"/>
+<fullyQualifiedTypeName name="core.BDMySQL"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

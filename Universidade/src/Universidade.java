@@ -1,0 +1,25 @@
+
+public class Universidade {
+ public static void main(String[] args) {
+	
+	 Pessoa p = new Pessoa();
+	 Estudante e = new Estudante();
+
+	 p.setNome("Mariazinha da Silva");
+	 p.setEmail("mariazinha.silva@gmail.com");
+	 p.setFone("1233-4567");
+	 
+	 System.out.println(p.exibirInfo());
+	 
+	 e.setNome("Joazinho da Silva");
+	 e.setEmail("joazinho.silva@gmail.com");
+	 e.setFone("1234-5678");
+	 e.setCurso("Ciencia da Computacao");
+	 e.setNumMatricula("123");
+	 
+	 System.out.println(e.exibirInfo());
+	 
+	 
+	 
+}
+}

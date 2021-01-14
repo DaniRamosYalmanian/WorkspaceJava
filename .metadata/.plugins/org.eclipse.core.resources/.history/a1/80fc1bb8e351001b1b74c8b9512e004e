@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class PostoTeste {
+ public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	Bomba bomba1 = new Bomba(1,"Gasolina",5.00,50000);
+	Bomba bomba2 = new Bomba(2,"Etanol",3.00,50000);
+	Bomba bomba3 = new Bomba(3,"Diesel",2.50,50000);
+	
+
+	do {
+		
+		System.out.println("Bem vindos ao Posto de Combustível!!!!");
+		System.out.println("--------------------------------------");
+		System.out.println(bomba1.getCodigo() + " - " + bomba1.getCombustivel() + " - R$ " + bomba1.getQtdLitroBomba());
+		System.out.println(bomba2.getCodigo() + " - " + bomba2.getCombustivel() + " - R$ " + bomba2.getQtdLitroBomba());	
+		System.out.println(bomba3.getCodigo() + " - " + bomba3.getCombustivel() + " - R$ " + bomba3.getQtdLitroBomba());		
+		
+		int opcaoBomba = teclado.nextInt();
+		
+		System.out.println("Abastecimento por: ");
+		System.out.println("1 - Valor");
+		System.out.println("2 - Litros");
+		int opcao = teclado.nextInt();
+		double valor = teclado.nextDouble();
+				
+		switch(opcao) {
+			case 1:
+				switch (opcaoBomba) {
+					case 1:
+						bomba1.abastecerValor(valor);
+						bomba1.exibirBomba();
+						break;
+					 case 2:
+						bomba2.abastecerValor(valor);
+						bomba2.exibirBomba();
+						break;
+					 case 3:
+						bomba3.abastecerValor(valor);
+						bomba3.exibirBomba();
+						break;
+				}
+				break;
+				
+			case 2: 
+				switch (opcaoBomba) {
+					case 1:
+						bomba1.abastecerLitros(valor);
+						bomba1.exibirBomba();
+						break;
+					 case 2:
+						bomba2.abastecerLitros(valor);
+						bomba2.exibirBomba();
+						break;
+					 case 3:
+						bomba3.abastecerLitros(valor);
+						bomba3.exibirBomba();
+						break;
+				}
+				break;
+		} while (opcao <=2);
+	}

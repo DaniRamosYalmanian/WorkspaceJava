@@ -1,0 +1,27 @@
+package ui;
+
+import func.Chefe;
+import func.Comissionado;
+import func.Empreteiro;
+import func.Funcionario;
+import func.Horista;
+
+public class ListaFuncionarios {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	 Funcionario ListaFuncionario[4];
+	 
+	 ListaFuncionario[0] = new Chefe("Leonardo Caldeira",1,1000,1000,1000);
+	 ListaFuncionario[1] = new Comissionado("Daniela Ramos",2,1000,1000);
+	 ListaFuncionario[2] = new Empreteiro("Carlos Melchior",3,1000);
+	 ListaFuncionario[4] = new Horista("Matheus",4,100,220);
+	 
+	 for (int i=0; i<4;  i++) {
+		 System.out.println(ListaFuncionario[i].exibirInfo());
+	 }
+	
+
+}
+
